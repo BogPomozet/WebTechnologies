@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lectures.css">
+    <title>Lecture 2</title>
+</head>
+
+<body>
+
+    <div class="box-area">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html">Web Technologies</a>
+                </div>
+                <nav>
+                    <a href="https://www.w3schools.com/html/default.asp">Additional</a>
+                    <a href="lecture3.html">Next Page</a>
+                </nav>
+            </div>
+        </header>
+        <div class="banner-area">
+            <h2>REPRESENTING DATA:</h2>
+            <h2>HTML 5 & SEMANTIC HTML</h2>
+        </div>
+        <div class="content-area">
+            <div class="wrapper">
+                <h2>TAG MISUSE</h2>
+                <p>
+                    <li><b>Blockquote</b> - used to indent text because default presentation is
+                        indented (instead of using CSS margins)</li>
+                    <li><b>Paragraph</b> - used to add space between page elements instead of
+                        defining actual paragraphs (instead of margin & padding style properties)</li>
+                    <li><b>Unordered List</b> - used to indent text but without list elements the
+                        HTML is invalid (as well as being semantically incorrect (margin or
+                        padding styles)</li>
+                    <li><b>Heading</b> - used to make text bigger and bolder. Semantically incorrect
+                        if the text isn’t actually a heading (font-weight & font-size CSS properties)</li>
+                </p>
+                <img src="lecture2(1).png" width="550px" height="400px">
+                <h2>STRUCTURE & MEANING</h2>
+                <p>Search engines don’t see style & presentation. They only see content. They understand
+                    how to handle the content because the content and it’s markup, communicate the meaning
+                    of the content. Where we place content on a page, & how we mark it up, can alter how
+                    that content is dealt with.</p>
+                <p>e.g. Content in &lt;h1&gt; is more likely to be weighted as important to the structure of
+                    the page, & so contribute to search engine analysis, than content in &lt;p&gt; (which is
+                    more likely than content in &lt;b&gt;).</p>
+                <h2>SEMANTIC MARKUP</h2>
+                <p>Designers have tried to bring semantic markup to HTML in their use of &lt;div&gt; and
+                    &lt;snap&gt; to group elements of a page together - but &lt;div&gt; & &lt;span&gt; don’t mean
+                    anything.
+                    e.g. One &lt;div&gt; could be a navigational collection, another &lt;div&gt; could contain core
+                    content.
+                    A &lt;nav&gt; tag communicates that it’s content should be treated as navigational content.</p>
+                <p>Designers defined their own id/class names but this was ad hoc & so inconsistent - difficult to
+                    process, i.e. search engines detecting useful parts of a given page. Tags that communicate more
+                    clearly defined meaning about content are useful: they can lead to better structure, increased
+                    accessibility, more reliable automated processing, maintainability, & reuse.</p>
+                <h2>HTML 5</h2>
+                <p>Semantic meaning has always been present in HTML but is now emphasised. HTML5 attempts to address
+                    this through addition of meaningful grouping tags (sectioning elements - “divs but with added
+                    meaning”):
+                <div style="float: right">
+                    <img src="lecture2(2).png" width="200px" height="300px" />
+
+                </div>
+                <div class="bulletPoint">
+                    <ul>
+                        <li>article</li>
+                        <li>aside </li>
+                        <li>details</li>
+                        <li>figcaption</li>
+                        <li>figure</li>
+                        <li>footer</li>
+                        <li>header</li>
+
+                    </ul>
+                </div>
+                <div class="bulletPoint">
+                    <ul>
+                        <li>main </li>
+                        <li>mark</li>
+                        <li>nav </li>
+                        <li>section </li>
+                        <li>summary</li>
+                        <li>time</li>
+                    </ul>
+                </div>
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <h2> SEMANTIC MEANING (HTML 4)</h2>
+                <p>Some existing tags redefined to have semantic meaning</p>
+                <table class="center">
+                    <thead>
+                        <th>TAG</th>
+                        <th>Meaning</th>
+                        <th>TAG</th>
+                        <th>Meaning</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>abbr</td>
+                            <td>Abbreviation</td>
+                            <td>h1</td>
+                            <td>First-level headline</td>
+                        </tr>
+                        <tr>
+                            <td>acronym</td>
+                            <td>Acronym</td>
+                            <td>h2</td>
+                            <td>Second-level headline</td>
+                        </tr>
+                        <tr>
+                            <td>blockquote</td>
+                            <td>Long quotation</td>
+                            <td>h3</td>
+                            <td>Third-level headline</td>
+                        </tr>
+                        <tr>
+                            <td>dfn</td>
+                            <td>Definition</td>
+                            <td>h4</td>
+                            <td>Fourth-level headline</td>
+                        </tr>
+                        <tr>
+                            <td>address</td>
+                            <td>Address for author(s) of the document</td>
+                            <td>h5</td>
+                            <td>Fifth-level headline</td>
+                        </tr>
+                        <tr>
+                            <td>cite</td>
+                            <td>Citation</td>
+                            <td>h6</td>
+                            <td>Sixth-level headline</td>
+                        </tr>
+                        <tr>
+                            <td>code</td>
+                            <td>Code reference</td>
+                            <td>hr</td>
+                            <td>Thematic break</td>
+                        </tr>
+                        <tr>
+                            <td>tt</td>
+                            <td>Teletype text</td>
+                            <td>kbd</td>
+                            <td>Text to be entered by the user</td>
+                        </tr>
+                        <tr>
+                            <td>dov</td>
+                            <td>Logical division</td>
+                            <td>pre</td>
+                            <td>Pre-formatted text</td>
+                        </tr>
+                        <tr>
+                            <td>span</td>
+                            <td>Generic inline style container</td>
+                            <td>q</td>
+                            <td>Short inline quotation</td>
+                        </tr>
+                        <tr>
+                            <td>del</td>
+                            <td>Deleted text</td>
+                            <td>samp</td>
+                            <td>Sample output</td>
+                        </tr>
+                        <tr>
+                            <td>ins</td>
+                            <td>Inserted text</td>
+                            <td>sub</td>
+                            <td>Subscript</td>
+                        </tr>
+                        <tr>
+                            <td>em</td>
+                            <td>Emphasis</td>
+                            <td>sup</td>
+                            <td>Superscript</td>
+                        </tr>
+                        <tr>
+                            <td>strong</td>
+                            <td>Strong emphasis</td>
+                            <td>var</td>
+                            <td>Variable or user defined text</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>NEW SEMANTIC TAGS IN HTML5</h2>
+            </div>
+            <div class="list">
+                <ul>
+                    <li> &lt;section&gt;- a thematic grouping of
+                        content, typically with a heading</li>
+                    <li >&lt;article&gt;- independent, self-contained
+                        content</li>
+                    <li> &lt;header&gt;- container for introductory
+                        content</li>
+                    <li> &lt;footer&gt;- information about its
+                        containing element (author, copyright,&c.)</li>
+                    <li> &lt;nav&gt;- major blocks of navigational links</li>
+                    <li> &lt;aside&gt;- related additional content</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li> &lt;figure&gt; & &lt;figcaption&gt;- visually explain
+                        an image</li>
+                    <li> &lt;main&gt;- the core content of the
+                        document</li>
+                    <li> &lt;mark&gt;- highlighted/emphasised sections</li>
+                    <li> &lt;details&gt;- additional information that can
+                        be hidden/shown</li>
+                    <li> &lt;summary&gt;- visible heading associated
+                        with &lt;details&gt;</li>
+                    <li> &lt;time&gt;- date/time information
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
