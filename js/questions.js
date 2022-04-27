@@ -1,4 +1,5 @@
 // creating an array and passing the number, questions, options, and answers
+//there can be as many questions as you want
 let questions = [
     {
     numb: 1,
@@ -24,49 +25,35 @@ let questions = [
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "Who is making the Web standards?",
+    answer: "The World Wide Web Construm",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "Microsoft",
+      "Google",
+      "Mozilla",
+      "The World Wide Web Construm"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "Choose the correct HTML element to define important text:",
+    answer: "<strong>",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "<important>",
+      "<i>",
+      "<strong>",
+      "<b>"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "Choose the correct HTML element for the largest heading:",
+    answer: "<h1>",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "<h6>",
+      "<heading>",
+      "<head>",
+      "<h1>"
     ]
   },
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
-
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
-];
+ ];

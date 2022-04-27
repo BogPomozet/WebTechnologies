@@ -6,118 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lectures.css">
-    <title>Lecture 1</title>
+    <title>Lecture 3</title>
 </head>
 
 <body>
 
     <div class="box-area">
         <header>
+            <!-- Menu content -->
             <div class="wrapper">
                 <div class="logo">
                     <a href="index.html">Web Technologies</a>
                 </div>
                 <nav>
                     <a href="https://www.w3schools.com/html/default.asp">Additional</a>
-                    <a href="lecture2.html">Next Page</a>
+                    <a href="#">Next Page</a>
                 </nav>
             </div>
         </header>
+        <!-- Banner content -->
         <div class="banner-area">
             <h2>STYLING HTML</h2>
             <h2>USING CSS</h2>
         </div>
+        <!-- Page content -->
         <div class="content-area">
             <div class="wrapper">
                 <q>HTML alone is really great, but pretty ugly. CSS gives us a way to improve how the elements of our
                     pages are presented</q>
+
                 <h2>HTML , CSS, & JS</h2>
+
                 <p>HTML gives us structure (which is essential). CSS gives us presentation buy not just making things
                     look pretty
-                    but also important to usability & accessibility. Presentation from a technical perspective</p>
+                    but also important to usability & accessibility. Presentation from a technical perspective
+                </p>
+
                 <h2>HTML</h2>
+
                 <p>Early HTML had mixed content and presentation: every element needed font, colour, style, alignment,
                     border,
                     size, etc. explicitly described, often repeatedly so throughout. It needed a consistent & flexible
                     way to control presentation:
                     enter CSS. Moving style declarations gives simpler HTML and more manageable design.
                 </p>
+
                 <h2>CONTENT & PRESENTATION</h2>
+
                 <p>Visual & design aspects separated from the core content & structure of the document. Same as a human
                     body css is a skeleton gives structure and html gives appearance as a flash.
                 </p>
+
                 <p>Different members of a team can work on each aspect. People with visual impairment can provide their
                     own stylesheets to the browser to override the website developer’s decisions. Screen & Print
-                    versions of pages can be styled differently - tailor content to the medium of consumption.</p>
+                    versions of pages can be styled differently - tailor content to the medium of consumption.
+                </p>
+
                 <p>You can’t design something well until you have some idea of what the design is working with - you
                     need some content (or at least an idea of the structure of the content). Content can drive the
-                    design process this is why we started with HTML and thinking about Data before getting to CSS.</p>
+                    design process this is why we started with HTML and thinking about Data before getting to CSS.
+                </p>
+                
                 <h2>CASCADING STYLE SHEETS (CSS)</h2>
 
-                <p>
+                <p>A Declarative, domain-specific, text-based, page appearance description programming language that is
+                    flexible and robust way to share information, primarily as documents, across many platforms. It can
+                    be:
+                    <li> Declarative (implicit control flow) - say what we want & the computer tries to achieve that (&
+                        other thinks might happen (e.g. increase font-size & the associated container will grow
+                        automatically)</li>
+                    <li> Resilient - If browser can’t do what you declare in CSS then the site (generally) continues to
+                        function</li>
+                    <li> Permits almost every HTML tag to be arbitrarily scaled, positioned, & decorated - overcomes
+                        limitations of underlying markup language</li>
                 </p>
-                <h2>HTML ELEMENT STRUCTURE</h2>
-                <p></p>
-                <table class="center">
-                    <thead>
-                        <th>DESCRIPTION</th>
-                        <th>TAG</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Document Structure</td>
-                            <td>html, head, body</td>
-                        </tr>
-                        <tr>
-                            <td>Within "head" section</td>
-                            <td>title, base, meta, style, link</td>
-                        </tr>
-                        <tr>
-                            <td>Tags for text blocks</td>
-                            <td>address, blockquote, div, h1...h6, p, pre, xmp</td>
-                        </tr>
-                        <tr>
-                            <td>Tags that define lists</td>
-                            <td>dir, dl, dt, dd, menu, ol, ul, li</td>
-                        </tr>
-                        <tr>
-                            <td>Tags that define text format</td>
-                            <td>b, basefont, big, cite, code, em, font, i, kbd, strike, sup, tt, u, var</td>
-                        </tr>
-                        <tr>
-                            <td>Tags that define anchors and links</td>
-                            <td>a</td>
-                        </tr>
-                        <tr>
-                            <td>Tags that define images and image maps</td>
-                            <td>img, area, map</td>
-                        </tr>
-                        <tr>
-                            <td>Tags that define tables</td>
-                            <td>table, caption, thead, tbody, tfoot, tr, th, td</td>
-                        </tr>
-                        <tr>
-                            <td>Tags that define forms</td>
-                            <td>form, fieldset, input, select, option, textarea, label, legend, isindex</td>
-                        </tr>
-                        <tr>
-                            <td>Tags that define frames</td>
-                            <td>frame, frameset, iframe</td>
-                        </tr>
-                        <tr>
-                            <td>Tags that define scripts</td>
-                            <td>script, noscript</td>
-                        </tr>
-                        <tr>
-                            <td>Tags that define applets & plug-ins</td>
-                            <td>applet, param, object (embed not standard)</td>
-                        </tr>
-                        <tr>
-                            <td>Tags that adjust text</td>
-                            <td>br, center, hr</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+                <h2>CSS DESIGN CONSTRAINTS</h2>
+
+                <p>
+                    <li>Applies styling & layout to HTML elements - can paint border around HTML element but cannot
+                        create in pure CSS</li>
+                    <li>Layouts of content that can adjust to any screen/viewport/canvas on any platform</li>
+                    <li>Text that scales independently of viewport - scaling font should lead to reflow of page not to
+                        horizontal scrolling</li>
+                    <li>User can override anything regardless of what the designer thinks or intends</li>
+                    <li>Progressive rendering - layout depends on previous content(but not future content) - but loading
+                        new content might force a reflow of previously rendered content</li>
+                </p>
+
+                <h2>BOX MODEL</h2>
+
+                <img src="lecture3(1).png" width="700px" height="500px" />
+                
+                <p>Each element of a web page has several boxes associated with it that affect spacing & placement:
+                    <li>Padding - distance between edge of element and it’s content </li>
+                    <li>Border - frontier between padding and margin</li>
+                    <li>Margin - distance between edge of element and adjacent element</li>
+                    <li>padding, border, & margin divided into four edges: top, bottom, left, & right: border-left,
+                        border-right, border-top and border-bottom. Same for margin and padding…</li>
+                    <li>Borders can be applied to all edges or to individual edges. Characteristics: {solid, dotted,
+                        dashed, double}</li>
+                </p>
 
             </div>
         </div>

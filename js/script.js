@@ -10,20 +10,20 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-// if startQuiz button clicked
+// Start Quiz
 start_btn.onclick = ()=>{
-    info_box.classList.add("activeInfo"); //show info box
+    info_box.classList.add("activeInfo"); //shows info box
 }
 
-// if exitQuiz button clicked
+// Exit Quiz
 exit_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); //hide info box
+    info_box.classList.remove("activeInfo"); //hides info box
 }
 
-// if continueQuiz button clicked
+// Continiue Quiz
 continue_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); //hide info box
-    quiz_box.classList.add("activeQuiz"); //show quiz box
+    info_box.classList.remove("activeInfo"); //hides info box
+    quiz_box.classList.add("activeQuiz"); //shows quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
     startTimer(20); //calling startTimer function
@@ -41,10 +41,10 @@ let widthValue = 0;
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
-// if restartQuiz button clicked
+// Restart Quiz
 restart_quiz.onclick = ()=>{
-    quiz_box.classList.add("activeQuiz"); //show quiz box
-    result_box.classList.remove("activeResult"); //hide result box
+    quiz_box.classList.add("activeQuiz"); //shows quiz box
+    result_box.classList.remove("activeResult"); //hides result box
     timeValue = 20; 
     que_count = 0;
     que_numb = 1;
@@ -60,7 +60,7 @@ restart_quiz.onclick = ()=>{
     next_btn.classList.remove("show"); //hide the next button
 }
 
-// if quitQuiz button clicked
+// Quitting Quiz
 quit_quiz.onclick = ()=>{
     window.location.reload(); //reload the current window
 }
@@ -68,7 +68,7 @@ quit_quiz.onclick = ()=>{
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
-// if Next Que button clicked
+// Next Question
 next_btn.onclick = ()=>{
     if(que_count < questions.length - 1){ //if question count is less than total question length
         que_count++; //increment the que_count value
