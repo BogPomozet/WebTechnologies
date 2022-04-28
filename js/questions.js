@@ -37,23 +37,23 @@ let questions = [
     {
     numb: 4,
     question: "Choose the correct HTML element to define important text:",
-    answer: "<strong>",
+    answer: "strong",
     options: [
-      "<important>",
-      "<i>",
-      "<strong>",
-      "<b>"
+      "important",
+      "i",
+      "strong",
+      "b"
     ]
   },
     {
     numb: 5,
     question: "Choose the correct HTML element for the largest heading:",
-    answer: "<h1>",
+    answer: "h1",
     options: [
-      "<h6>",
-      "<heading>",
-      "<head>",
-      "<h1>"
+      "h6",
+      "heading",
+      "head",
+      "h1"
     ]
   },
  ];
